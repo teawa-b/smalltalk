@@ -11,7 +11,7 @@ import { createTalk, transcribe, compareWithout } from './lib/talk.js';
 // SmallTalk's backend: serves the page in ../frontend and the conversation API: start, hear a line, compare.
 const files = {
   '/': ['talk.html', 'text/html'], '/talk.js': ['talk.js', 'text/javascript'], '/talk-xr.js': ['talk-xr.js', 'text/javascript'], '/talk.css': ['talk.css', 'text/css'],
-  '/sound.js': ['sound.js', 'text/javascript']
+  '/sound.js': ['sound.js', 'text/javascript'], '/fresh.js': ['fresh.js', 'text/javascript']
 };
 const cdn = 'https://cdn.jsdelivr.net';
 
@@ -63,7 +63,7 @@ export function createApp({ env = process.env, fetcher = fetch } = {}) {
         res.writeHead(200, { 'Content-Type': `${type}; charset=utf-8`, 'Cache-Control': 'no-cache' });
         return res.end(await readFile(new URL(`../frontend/${name}`, import.meta.url)));
       }
-      if (req.method === 'GET' && path === '/api/health') return send(200, { ok: true });
+      if (req.method === 'GET' && path === '/api/health') return send(200, { ok: true, version: env.VERCEL_DEPLOYMENT_ID || env.VERCEL_URL || 'local' });
       if (req.method === 'GET' && path === '/api/config') {
         return send(200, { site: 'talk', siteName: 'SmallTalk', qloo: Boolean(env.QLOO_API_KEY), qlooHost, llm: llm?.label || null });
       }
