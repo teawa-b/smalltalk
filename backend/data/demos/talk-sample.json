@@ -1,0 +1,2323 @@
+{
+ "site": "talk",
+ "slug": "sample",
+ "title": "A first coffee",
+ "request": {
+  "mine": "Bon Iver, Past Lives, Haruki Murakami"
+ },
+ "turns": [
+  {
+   "heard": "Sorry I was late, I was finishing the new Sally Rooney on the train.",
+   "who": "them",
+   "view": {
+    "lines": [
+     {
+      "who": "them",
+      "text": "Sorry I was late, I was finishing the new Sally Rooney on the train.",
+      "t": 1792610005659
+     }
+    ],
+    "them": [
+     {
+      "name": "Sally Rooney",
+      "type": "person",
+      "id": "73C8C852-CDF3-4226-92A4-74C0B0E29DC7"
+     }
+    ],
+    "mine": [
+     {
+      "name": "Bon Iver",
+      "type": "artist",
+      "id": "E51DB8F2-7A93-4746-A283-E55B5216FDE1"
+     },
+     {
+      "name": "Past Lives",
+      "type": "movie",
+      "id": "9A62B37E-9A6D-47DA-A6FD-9414FA7F7710"
+     },
+     {
+      "name": "Haruki Murakami",
+      "type": "author",
+      "id": "E96DF441-451B-4C26-9415-257594472F52"
+     }
+    ],
+    "avoid": [],
+    "recs": {
+     "artist": [
+      {
+       "name": "Maisie Peters",
+       "affinity": 0.957,
+       "type": "artist"
+      },
+      {
+       "name": "Orla Gartland",
+       "affinity": 0.956,
+       "type": "artist"
+      },
+      {
+       "name": "Olivia Rodrigo",
+       "affinity": 0.946,
+       "type": "artist"
+      },
+      {
+       "name": "Gracie Abrams",
+       "affinity": 0.946,
+       "type": "artist"
+      },
+      {
+       "name": "Conan Gray",
+       "affinity": 0.943,
+       "type": "artist"
+      }
+     ],
+     "movie": [
+      {
+       "name": "Irreplaceable You",
+       "affinity": 0.931,
+       "type": "movie"
+      },
+      {
+       "name": "Before I Fall",
+       "affinity": 0.93,
+       "type": "movie"
+      },
+      {
+       "name": "Gifted",
+       "affinity": 0.929,
+       "type": "movie"
+      },
+      {
+       "name": "Midnight Sun",
+       "affinity": 0.927,
+       "type": "movie"
+      },
+      {
+       "name": "Every Day",
+       "affinity": 0.927,
+       "type": "movie"
+      }
+     ],
+     "tv_show": [
+      {
+       "name": "Old Fashion Cupcake",
+       "affinity": 0.973,
+       "type": "tv_show"
+      },
+      {
+       "name": "Semantic Error",
+       "affinity": 0.964,
+       "type": "tv_show"
+      },
+      {
+       "name": "Cherry Blossoms After Winter",
+       "affinity": 0.961,
+       "type": "tv_show"
+      },
+      {
+       "name": "Roommates of Poongduck 304",
+       "affinity": 0.96,
+       "type": "tv_show"
+      },
+      {
+       "name": "Where Your Eyes Linger",
+       "affinity": 0.959,
+       "type": "tv_show"
+      }
+     ],
+     "book": [
+      {
+       "name": "The First to Die at the End (Death-Cast, #0)",
+       "affinity": 0.915,
+       "type": "book"
+      },
+      {
+       "name": "The Seven Husbands of Evelyn Hugo",
+       "affinity": 0.887,
+       "type": "book"
+      },
+      {
+       "name": "Under the Whispering Door",
+       "affinity": 0.883,
+       "type": "book"
+      },
+      {
+       "name": "Ace of Spades",
+       "affinity": 0.876,
+       "type": "book"
+      },
+      {
+       "name": "The Song of Achilles",
+       "affinity": 0.875,
+       "type": "book"
+      }
+     ],
+     "podcast": [
+      {
+       "name": "Unladylike",
+       "affinity": 0.962,
+       "type": "podcast"
+      },
+      {
+       "name": "How to Be Fine",
+       "affinity": 0.913,
+       "type": "podcast"
+      },
+      {
+       "name": "The Guilty Feminist",
+       "affinity": 0.907,
+       "type": "podcast"
+      },
+      {
+       "name": "Terrible, Thanks For Asking",
+       "affinity": 0.895,
+       "type": "podcast"
+      },
+      {
+       "name": "The Dream",
+       "affinity": 0.892,
+       "type": "podcast"
+      }
+     ],
+     "brand": [
+      {
+       "name": "Waterstones",
+       "affinity": 0.984,
+       "type": "brand"
+      },
+      {
+       "name": "Barnes & Noble",
+       "affinity": 0.924,
+       "type": "brand"
+      },
+      {
+       "name": "Epic Reads",
+       "affinity": 0.921,
+       "type": "brand"
+      },
+      {
+       "name": "Goodreads",
+       "affinity": 0.921,
+       "type": "brand"
+      },
+      {
+       "name": "AbeBooks",
+       "affinity": 0.917,
+       "type": "brand"
+      }
+     ],
+     "destination": [
+      {
+       "name": "Plymouth",
+       "affinity": 0.904,
+       "type": "destination"
+      },
+      {
+       "name": "Salem",
+       "affinity": 0.893,
+       "type": "destination"
+      },
+      {
+       "name": "Chatham",
+       "affinity": 0.89,
+       "type": "destination"
+      },
+      {
+       "name": "Gloucester",
+       "affinity": 0.889,
+       "type": "destination"
+      },
+      {
+       "name": "Provincetown",
+       "affinity": 0.887,
+       "type": "destination"
+      }
+     ]
+    },
+    "shared": [
+     {
+      "name": "The Anthropocene Reviewed: Essays on a Human-Centered Planet",
+      "type": "book",
+      "affinity": 0.923,
+      "them": 0.52,
+      "me": 0.48
+     },
+     {
+      "name": "Goodreads",
+      "type": "brand",
+      "affinity": 0.916,
+      "them": 0.27,
+      "me": 0.73
+     },
+     {
+      "name": "Grammarly",
+      "type": "brand",
+      "affinity": 0.911,
+      "them": 0.26,
+      "me": 0.75
+     },
+     {
+      "name": "Lady Bird",
+      "type": "movie",
+      "affinity": 0.906,
+      "them": 0.28,
+      "me": 0.72
+     },
+     {
+      "name": "Why Fish Don’t Exist: A Story of Loss, Love, and the Hidden Order of Life",
+      "type": "book",
+      "affinity": 0.897,
+      "them": 0.51,
+      "me": 0.49
+     },
+     {
+      "name": "To Paradise",
+      "type": "book",
+      "affinity": 0.878,
+      "them": 0.54,
+      "me": 0.46
+     }
+    ],
+    "nudges": [
+     {
+      "say": "Oh, Sally Rooney! Have you read 'The Seven Husbands of Evelyn Hugo'?",
+      "about": "The Seven Husbands of Evelyn Hugo",
+      "why": "People with their taste also love this book",
+      "grounded": true
+     },
+     {
+      "say": "I love Goodreads! It's such a great way to track what I'm reading.",
+      "about": "Goodreads",
+      "why": "You both love Goodreads",
+      "grounded": true
+     },
+     {
+      "say": "How do you like 'The First to Die at the End'?",
+      "about": "The First to Die at the End (Death-Cast, #0)",
+      "why": "People with their taste also love this book",
+      "grounded": true
+     }
+    ],
+    "updated": 1792610014454
+   }
+  },
+  {
+   "heard": "No worries. Is it as good as Normal People?",
+   "who": "me",
+   "view": {
+    "lines": [
+     {
+      "who": "them",
+      "text": "Sorry I was late, I was finishing the new Sally Rooney on the train.",
+      "t": 1792610005659
+     },
+     {
+      "who": "me",
+      "text": "No worries. Is it as good as Normal People?",
+      "t": 1792610014457
+     }
+    ],
+    "them": [
+     {
+      "name": "Sally Rooney",
+      "type": "person",
+      "id": "73C8C852-CDF3-4226-92A4-74C0B0E29DC7"
+     }
+    ],
+    "mine": [
+     {
+      "name": "Bon Iver",
+      "type": "artist",
+      "id": "E51DB8F2-7A93-4746-A283-E55B5216FDE1"
+     },
+     {
+      "name": "Past Lives",
+      "type": "movie",
+      "id": "9A62B37E-9A6D-47DA-A6FD-9414FA7F7710"
+     },
+     {
+      "name": "Haruki Murakami",
+      "type": "author",
+      "id": "E96DF441-451B-4C26-9415-257594472F52"
+     },
+     {
+      "name": "Normal People",
+      "type": "tv_show",
+      "id": "19DF9974-2931-42F7-AF6F-DC29B9E17974"
+     }
+    ],
+    "avoid": [],
+    "recs": {
+     "artist": [
+      {
+       "name": "Maisie Peters",
+       "affinity": 0.957,
+       "type": "artist"
+      },
+      {
+       "name": "Orla Gartland",
+       "affinity": 0.956,
+       "type": "artist"
+      },
+      {
+       "name": "Olivia Rodrigo",
+       "affinity": 0.946,
+       "type": "artist"
+      },
+      {
+       "name": "Gracie Abrams",
+       "affinity": 0.946,
+       "type": "artist"
+      },
+      {
+       "name": "Conan Gray",
+       "affinity": 0.943,
+       "type": "artist"
+      }
+     ],
+     "movie": [
+      {
+       "name": "Irreplaceable You",
+       "affinity": 0.931,
+       "type": "movie"
+      },
+      {
+       "name": "Before I Fall",
+       "affinity": 0.93,
+       "type": "movie"
+      },
+      {
+       "name": "Gifted",
+       "affinity": 0.929,
+       "type": "movie"
+      },
+      {
+       "name": "Midnight Sun",
+       "affinity": 0.927,
+       "type": "movie"
+      },
+      {
+       "name": "Every Day",
+       "affinity": 0.927,
+       "type": "movie"
+      }
+     ],
+     "tv_show": [
+      {
+       "name": "Old Fashion Cupcake",
+       "affinity": 0.973,
+       "type": "tv_show"
+      },
+      {
+       "name": "Semantic Error",
+       "affinity": 0.964,
+       "type": "tv_show"
+      },
+      {
+       "name": "Cherry Blossoms After Winter",
+       "affinity": 0.961,
+       "type": "tv_show"
+      },
+      {
+       "name": "Roommates of Poongduck 304",
+       "affinity": 0.96,
+       "type": "tv_show"
+      },
+      {
+       "name": "Where Your Eyes Linger",
+       "affinity": 0.959,
+       "type": "tv_show"
+      }
+     ],
+     "book": [
+      {
+       "name": "The First to Die at the End (Death-Cast, #0)",
+       "affinity": 0.915,
+       "type": "book"
+      },
+      {
+       "name": "The Seven Husbands of Evelyn Hugo",
+       "affinity": 0.887,
+       "type": "book"
+      },
+      {
+       "name": "Under the Whispering Door",
+       "affinity": 0.883,
+       "type": "book"
+      },
+      {
+       "name": "Ace of Spades",
+       "affinity": 0.876,
+       "type": "book"
+      },
+      {
+       "name": "The Song of Achilles",
+       "affinity": 0.875,
+       "type": "book"
+      }
+     ],
+     "podcast": [
+      {
+       "name": "Unladylike",
+       "affinity": 0.962,
+       "type": "podcast"
+      },
+      {
+       "name": "How to Be Fine",
+       "affinity": 0.913,
+       "type": "podcast"
+      },
+      {
+       "name": "The Guilty Feminist",
+       "affinity": 0.907,
+       "type": "podcast"
+      },
+      {
+       "name": "Terrible, Thanks For Asking",
+       "affinity": 0.895,
+       "type": "podcast"
+      },
+      {
+       "name": "The Dream",
+       "affinity": 0.892,
+       "type": "podcast"
+      }
+     ],
+     "brand": [
+      {
+       "name": "Waterstones",
+       "affinity": 0.984,
+       "type": "brand"
+      },
+      {
+       "name": "Barnes & Noble",
+       "affinity": 0.924,
+       "type": "brand"
+      },
+      {
+       "name": "Epic Reads",
+       "affinity": 0.921,
+       "type": "brand"
+      },
+      {
+       "name": "Goodreads",
+       "affinity": 0.921,
+       "type": "brand"
+      },
+      {
+       "name": "AbeBooks",
+       "affinity": 0.917,
+       "type": "brand"
+      }
+     ],
+     "destination": [
+      {
+       "name": "Plymouth",
+       "affinity": 0.904,
+       "type": "destination"
+      },
+      {
+       "name": "Salem",
+       "affinity": 0.893,
+       "type": "destination"
+      },
+      {
+       "name": "Chatham",
+       "affinity": 0.89,
+       "type": "destination"
+      },
+      {
+       "name": "Gloucester",
+       "affinity": 0.889,
+       "type": "destination"
+      },
+      {
+       "name": "Provincetown",
+       "affinity": 0.887,
+       "type": "destination"
+      }
+     ]
+    },
+    "shared": [
+     {
+      "name": "The Anthropocene Reviewed: Essays on a Human-Centered Planet",
+      "type": "book",
+      "affinity": 0.884,
+      "them": 0.38,
+      "me": 0.62
+     },
+     {
+      "name": "To Paradise",
+      "type": "book",
+      "affinity": 0.868,
+      "them": 0.38,
+      "me": 0.62
+     },
+     {
+      "name": "A Heart That Works",
+      "type": "book",
+      "affinity": 0.866,
+      "them": 0.35,
+      "me": 0.65
+     },
+     {
+      "name": "The Book of Form and Emptiness",
+      "type": "book",
+      "affinity": 0.863,
+      "them": 0.36,
+      "me": 0.64
+     },
+     {
+      "name": "M Train",
+      "type": "book",
+      "affinity": 0.858,
+      "them": 0.34,
+      "me": 0.65
+     },
+     {
+      "name": "Why Fish Don’t Exist: A Story of Loss, Love, and the Hidden Order of Life",
+      "type": "book",
+      "affinity": 0.856,
+      "them": 0.36,
+      "me": 0.64
+     }
+    ],
+    "nudges": [
+     {
+      "say": "Have you read The Anthropocene Reviewed yet? We both own it.",
+      "about": "The Anthropocene Reviewed: Essays on a Human-Centered Planet",
+      "why": "Common ground: you both already own this book.",
+      "grounded": true
+     },
+     {
+      "say": "Have you seen Gifted? It feels like your kind of film.",
+      "about": "Gifted",
+      "why": "Qloo: people with your taste also love this movie.",
+      "grounded": true
+     },
+     {
+      "say": "Ever read The Seven Husbands of Evelyn Hugo? Thoughts?",
+      "about": "The Seven Husbands of Evelyn Hugo",
+      "why": "Qloo: people with your taste also love this book.",
+      "grounded": true
+     }
+    ],
+    "updated": 1792610025236
+   }
+  },
+  {
+   "heard": "Better, honestly. I have been on such a reading kick. That and Phoebe Bridgers on repeat.",
+   "who": "them",
+   "view": {
+    "lines": [
+     {
+      "who": "them",
+      "text": "Sorry I was late, I was finishing the new Sally Rooney on the train.",
+      "t": 1792610005659
+     },
+     {
+      "who": "me",
+      "text": "No worries. Is it as good as Normal People?",
+      "t": 1792610014457
+     },
+     {
+      "who": "them",
+      "text": "Better, honestly. I have been on such a reading kick. That and Phoebe Bridgers on repeat.",
+      "t": 1792610025238
+     }
+    ],
+    "them": [
+     {
+      "name": "Sally Rooney",
+      "type": "person",
+      "id": "73C8C852-CDF3-4226-92A4-74C0B0E29DC7"
+     },
+     {
+      "name": "Phoebe Bridgers",
+      "type": "artist",
+      "id": "AFBC71A7-9439-4AB0-AB68-D14B11AAF836"
+     }
+    ],
+    "mine": [
+     {
+      "name": "Bon Iver",
+      "type": "artist",
+      "id": "E51DB8F2-7A93-4746-A283-E55B5216FDE1"
+     },
+     {
+      "name": "Past Lives",
+      "type": "movie",
+      "id": "9A62B37E-9A6D-47DA-A6FD-9414FA7F7710"
+     },
+     {
+      "name": "Haruki Murakami",
+      "type": "author",
+      "id": "E96DF441-451B-4C26-9415-257594472F52"
+     },
+     {
+      "name": "Normal People",
+      "type": "tv_show",
+      "id": "19DF9974-2931-42F7-AF6F-DC29B9E17974"
+     }
+    ],
+    "avoid": [],
+    "recs": {
+     "artist": [
+      {
+       "name": "Orla Gartland",
+       "affinity": 0.97,
+       "type": "artist"
+      },
+      {
+       "name": "Lucy Dacus",
+       "affinity": 0.967,
+       "type": "artist"
+      },
+      {
+       "name": "Lizzy McAlpine",
+       "affinity": 0.965,
+       "type": "artist"
+      },
+      {
+       "name": "Samia",
+       "affinity": 0.96,
+       "type": "artist"
+      },
+      {
+       "name": "Gracie Abrams",
+       "affinity": 0.958,
+       "type": "artist"
+      }
+     ],
+     "movie": [
+      {
+       "name": "Miss Stevens",
+       "affinity": 0.91,
+       "type": "movie"
+      },
+      {
+       "name": "Instant Family",
+       "affinity": 0.909,
+       "type": "movie"
+      },
+      {
+       "name": "All the Bright Places",
+       "affinity": 0.908,
+       "type": "movie"
+      },
+      {
+       "name": "Little Women",
+       "affinity": 0.908,
+       "type": "movie"
+      },
+      {
+       "name": "Then Came You",
+       "affinity": 0.907,
+       "type": "movie"
+      }
+     ],
+     "tv_show": [
+      {
+       "name": "Everything's Gonna Be Okay",
+       "affinity": 0.962,
+       "type": "tv_show"
+      },
+      {
+       "name": "Heartbreak High",
+       "affinity": 0.956,
+       "type": "tv_show"
+      },
+      {
+       "name": "Sort Of",
+       "affinity": 0.955,
+       "type": "tv_show"
+      },
+      {
+       "name": "PEN15",
+       "affinity": 0.954,
+       "type": "tv_show"
+      },
+      {
+       "name": "Somebody Somewhere",
+       "affinity": 0.951,
+       "type": "tv_show"
+      }
+     ],
+     "book": [
+      {
+       "name": "To Paradise",
+       "affinity": 0.887,
+       "type": "book"
+      },
+      {
+       "name": "Nightcrawling",
+       "affinity": 0.88,
+       "type": "book"
+      },
+      {
+       "name": "On Earth We're Briefly Gorgeous",
+       "affinity": 0.877,
+       "type": "book"
+      },
+      {
+       "name": "Betty",
+       "affinity": 0.875,
+       "type": "book"
+      },
+      {
+       "name": "Didn't Nobody Give a Shit What Happened to Carlotta",
+       "affinity": 0.875,
+       "type": "book"
+      }
+     ],
+     "podcast": [
+      {
+       "name": "Unladylike",
+       "affinity": 0.933,
+       "type": "podcast"
+      },
+      {
+       "name": "The Guilty Feminist",
+       "affinity": 0.92,
+       "type": "podcast"
+      },
+      {
+       "name": "Nancy",
+       "affinity": 0.919,
+       "type": "podcast"
+      },
+      {
+       "name": "Getting Curious with Jonathan Van Ness",
+       "affinity": 0.915,
+       "type": "podcast"
+      },
+      {
+       "name": "Call Your Girlfriend",
+       "affinity": 0.912,
+       "type": "podcast"
+      }
+     ],
+     "brand": [
+      {
+       "name": "Epic Reads",
+       "affinity": 0.903,
+       "type": "brand"
+      },
+      {
+       "name": "Waterstones",
+       "affinity": 0.901,
+       "type": "brand"
+      },
+      {
+       "name": "Barnes & Noble",
+       "affinity": 0.897,
+       "type": "brand"
+      },
+      {
+       "name": "Polaroid",
+       "affinity": 0.892,
+       "type": "brand"
+      },
+      {
+       "name": "Strand Bookstore",
+       "affinity": 0.886,
+       "type": "brand"
+      }
+     ],
+     "destination": [
+      {
+       "name": "Salem",
+       "affinity": 0.941,
+       "type": "destination"
+      },
+      {
+       "name": "Portland",
+       "affinity": 0.929,
+       "type": "destination"
+      },
+      {
+       "name": "Plymouth",
+       "affinity": 0.929,
+       "type": "destination"
+      },
+      {
+       "name": "Bar Harbor",
+       "affinity": 0.929,
+       "type": "destination"
+      },
+      {
+       "name": "Gloucester",
+       "affinity": 0.927,
+       "type": "destination"
+      }
+     ]
+    },
+    "shared": [
+     {
+      "name": "Lucy Dacus",
+      "type": "artist",
+      "affinity": 0.956,
+      "them": 0.37,
+      "me": 0.63
+     },
+     {
+      "name": "Sufjan Stevens",
+      "type": "artist",
+      "affinity": 0.951,
+      "them": 0.3,
+      "me": 0.69
+     },
+     {
+      "name": "Julien Baker",
+      "type": "artist",
+      "affinity": 0.947,
+      "them": 0.37,
+      "me": 0.64
+     },
+     {
+      "name": "Big Red Machine",
+      "type": "artist",
+      "affinity": 0.945,
+      "them": 0.38,
+      "me": 0.63
+     },
+     {
+      "name": "boygenius",
+      "type": "artist",
+      "affinity": 0.944,
+      "them": 0.36,
+      "me": 0.64
+     },
+     {
+      "name": "Better Oblivion Community Center",
+      "type": "artist",
+      "affinity": 0.942,
+      "them": 0.37,
+      "me": 0.63
+     }
+    ],
+    "nudges": [
+     {
+      "say": "Have you heard Lucy Dacus? We both seem to love her.",
+      "about": "Lucy Dacus",
+      "why": "Common ground and fits their indie folk taste",
+      "grounded": true
+     },
+     {
+      "say": "Have you checked out Lizzy McAlpine? Feels like your kind of music.",
+      "about": "Lizzy McAlpine",
+      "why": "Qloo: fans of their taste also love her",
+      "grounded": true
+     },
+     {
+      "say": "What did you think of On Earth We're Briefly Gorgeous? Want to read it next?",
+      "about": "On Earth We're Briefly Gorgeous",
+      "why": "Qloo: fans of their taste also love this book",
+      "grounded": true
+     }
+    ],
+    "updated": 1792610036218
+   }
+  },
+  {
+   "heard": "We went to see Past Lives again last weekend and I cried the whole second half.",
+   "who": "them",
+   "view": {
+    "lines": [
+     {
+      "who": "them",
+      "text": "Sorry I was late, I was finishing the new Sally Rooney on the train.",
+      "t": 1792610005659
+     },
+     {
+      "who": "me",
+      "text": "No worries. Is it as good as Normal People?",
+      "t": 1792610014457
+     },
+     {
+      "who": "them",
+      "text": "Better, honestly. I have been on such a reading kick. That and Phoebe Bridgers on repeat.",
+      "t": 1792610025238
+     },
+     {
+      "who": "them",
+      "text": "We went to see Past Lives again last weekend and I cried the whole second half.",
+      "t": 1792610036220
+     }
+    ],
+    "them": [
+     {
+      "name": "Sally Rooney",
+      "type": "person",
+      "id": "73C8C852-CDF3-4226-92A4-74C0B0E29DC7"
+     },
+     {
+      "name": "Phoebe Bridgers",
+      "type": "artist",
+      "id": "AFBC71A7-9439-4AB0-AB68-D14B11AAF836"
+     },
+     {
+      "name": "Past Lives",
+      "type": "movie",
+      "id": "9A62B37E-9A6D-47DA-A6FD-9414FA7F7710"
+     }
+    ],
+    "mine": [
+     {
+      "name": "Bon Iver",
+      "type": "artist",
+      "id": "E51DB8F2-7A93-4746-A283-E55B5216FDE1"
+     },
+     {
+      "name": "Past Lives",
+      "type": "movie",
+      "id": "9A62B37E-9A6D-47DA-A6FD-9414FA7F7710"
+     },
+     {
+      "name": "Haruki Murakami",
+      "type": "author",
+      "id": "E96DF441-451B-4C26-9415-257594472F52"
+     },
+     {
+      "name": "Normal People",
+      "type": "tv_show",
+      "id": "19DF9974-2931-42F7-AF6F-DC29B9E17974"
+     }
+    ],
+    "avoid": [],
+    "recs": {
+     "artist": [
+      {
+       "name": "Lucy Dacus",
+       "affinity": 0.965,
+       "type": "artist"
+      },
+      {
+       "name": "Samia",
+       "affinity": 0.96,
+       "type": "artist"
+      },
+      {
+       "name": "Orla Gartland",
+       "affinity": 0.957,
+       "type": "artist"
+      },
+      {
+       "name": "Gracie Abrams",
+       "affinity": 0.956,
+       "type": "artist"
+      },
+      {
+       "name": "Lizzy McAlpine",
+       "affinity": 0.955,
+       "type": "artist"
+      }
+     ],
+     "movie": [
+      {
+       "name": "Cha Cha Real Smooth",
+       "affinity": 0.92,
+       "type": "movie"
+      },
+      {
+       "name": "The Whale",
+       "affinity": 0.92,
+       "type": "movie"
+      },
+      {
+       "name": "All of Us Strangers",
+       "affinity": 0.92,
+       "type": "movie"
+      },
+      {
+       "name": "The Fallout",
+       "affinity": 0.918,
+       "type": "movie"
+      },
+      {
+       "name": "Aftersun",
+       "affinity": 0.917,
+       "type": "movie"
+      }
+     ],
+     "tv_show": [
+      {
+       "name": "Because This Is My First Life",
+       "affinity": 0.962,
+       "type": "tv_show"
+      },
+      {
+       "name": "Our Beloved Summer",
+       "affinity": 0.962,
+       "type": "tv_show"
+      },
+      {
+       "name": "Something in the Rain",
+       "affinity": 0.959,
+       "type": "tv_show"
+      },
+      {
+       "name": "Fight for My Way",
+       "affinity": 0.959,
+       "type": "tv_show"
+      },
+      {
+       "name": "18 Again",
+       "affinity": 0.959,
+       "type": "tv_show"
+      }
+     ],
+     "book": [
+      {
+       "name": "Didn't Nobody Give a Shit What Happened to Carlotta",
+       "affinity": 0.898,
+       "type": "book"
+      },
+      {
+       "name": "Betty",
+       "affinity": 0.887,
+       "type": "book"
+      },
+      {
+       "name": "Last Summer on State Street",
+       "affinity": 0.882,
+       "type": "book"
+      },
+      {
+       "name": "Nightcrawling",
+       "affinity": 0.88,
+       "type": "book"
+      },
+      {
+       "name": "Somebody's Daughter",
+       "affinity": 0.88,
+       "type": "book"
+      }
+     ],
+     "podcast": [
+      {
+       "name": "Las Culturistas with Matt Rogers and Bowen Yang",
+       "affinity": 0.941,
+       "type": "podcast"
+      },
+      {
+       "name": "Getting Curious with Jonathan Van Ness",
+       "affinity": 0.928,
+       "type": "podcast"
+      },
+      {
+       "name": "Seek Treatment with Cat & Pat",
+       "affinity": 0.925,
+       "type": "podcast"
+      },
+      {
+       "name": "Nancy",
+       "affinity": 0.918,
+       "type": "podcast"
+      },
+      {
+       "name": "Couples Therapy",
+       "affinity": 0.917,
+       "type": "podcast"
+      }
+     ],
+     "brand": [
+      {
+       "name": "Airbnb",
+       "affinity": 0.906,
+       "type": "brand"
+      },
+      {
+       "name": "Getty Images",
+       "affinity": 0.906,
+       "type": "brand"
+      },
+      {
+       "name": "Polaroid",
+       "affinity": 0.906,
+       "type": "brand"
+      },
+      {
+       "name": "Urban Outfitters",
+       "affinity": 0.903,
+       "type": "brand"
+      },
+      {
+       "name": "Culture Trip",
+       "affinity": 0.896,
+       "type": "brand"
+      }
+     ],
+     "destination": [
+      {
+       "name": "Salem",
+       "affinity": 0.924,
+       "type": "destination"
+      },
+      {
+       "name": "Williamstown",
+       "affinity": 0.915,
+       "type": "destination"
+      },
+      {
+       "name": "New Haven",
+       "affinity": 0.915,
+       "type": "destination"
+      },
+      {
+       "name": "Cambridge",
+       "affinity": 0.911,
+       "type": "destination"
+      },
+      {
+       "name": "Provincetown",
+       "affinity": 0.911,
+       "type": "destination"
+      }
+     ]
+    },
+    "shared": [
+     {
+      "name": "Lucy Dacus",
+      "type": "artist",
+      "affinity": 0.956,
+      "them": 0.51,
+      "me": 0.63
+     },
+     {
+      "name": "Sufjan Stevens",
+      "type": "artist",
+      "affinity": 0.951,
+      "them": 0.47,
+      "me": 0.69
+     },
+     {
+      "name": "Julien Baker",
+      "type": "artist",
+      "affinity": 0.947,
+      "them": 0.51,
+      "me": 0.64
+     },
+     {
+      "name": "Big Red Machine",
+      "type": "artist",
+      "affinity": 0.945,
+      "them": 0.53,
+      "me": 0.63
+     },
+     {
+      "name": "boygenius",
+      "type": "artist",
+      "affinity": 0.944,
+      "them": 0.52,
+      "me": 0.64
+     },
+     {
+      "name": "Better Oblivion Community Center",
+      "type": "artist",
+      "affinity": 0.942,
+      "them": 0.52,
+      "me": 0.63
+     }
+    ],
+    "nudges": [
+     {
+      "say": "Have you heard Lucy Dacus's new stuff? We both love her.",
+      "about": "Lucy Dacus",
+      "why": "Shared favorite, and fans of your taste love her too.",
+      "grounded": true
+     },
+     {
+      "say": "Ever seen All of Us Strangers? Sounds like your kind of cry.",
+      "about": "All of Us Strangers",
+      "why": "Fans of your taste also love this tearjerker.",
+      "grounded": true
+     },
+     {
+      "say": "Have you gotten into Gracie Abrams yet? Similar vibe to Phoebe.",
+      "about": "Gracie Abrams",
+      "why": "Your taste overlaps strongly with Gracie Abrams fans.",
+      "grounded": true
+     }
+    ],
+    "updated": 1792610048370
+   }
+  },
+  {
+   "heard": "I have not seen it yet. Is it sad?",
+   "who": "me",
+   "view": {
+    "lines": [
+     {
+      "who": "them",
+      "text": "Sorry I was late, I was finishing the new Sally Rooney on the train.",
+      "t": 1792610005659
+     },
+     {
+      "who": "me",
+      "text": "No worries. Is it as good as Normal People?",
+      "t": 1792610014457
+     },
+     {
+      "who": "them",
+      "text": "Better, honestly. I have been on such a reading kick. That and Phoebe Bridgers on repeat.",
+      "t": 1792610025238
+     },
+     {
+      "who": "them",
+      "text": "We went to see Past Lives again last weekend and I cried the whole second half.",
+      "t": 1792610036220
+     },
+     {
+      "who": "me",
+      "text": "I have not seen it yet. Is it sad?",
+      "t": 1792610048371
+     }
+    ],
+    "them": [
+     {
+      "name": "Sally Rooney",
+      "type": "person",
+      "id": "73C8C852-CDF3-4226-92A4-74C0B0E29DC7"
+     },
+     {
+      "name": "Phoebe Bridgers",
+      "type": "artist",
+      "id": "AFBC71A7-9439-4AB0-AB68-D14B11AAF836"
+     },
+     {
+      "name": "Past Lives",
+      "type": "movie",
+      "id": "9A62B37E-9A6D-47DA-A6FD-9414FA7F7710"
+     }
+    ],
+    "mine": [
+     {
+      "name": "Bon Iver",
+      "type": "artist",
+      "id": "E51DB8F2-7A93-4746-A283-E55B5216FDE1"
+     },
+     {
+      "name": "Past Lives",
+      "type": "movie",
+      "id": "9A62B37E-9A6D-47DA-A6FD-9414FA7F7710"
+     },
+     {
+      "name": "Haruki Murakami",
+      "type": "author",
+      "id": "E96DF441-451B-4C26-9415-257594472F52"
+     },
+     {
+      "name": "Normal People",
+      "type": "tv_show",
+      "id": "19DF9974-2931-42F7-AF6F-DC29B9E17974"
+     }
+    ],
+    "avoid": [],
+    "recs": {
+     "artist": [
+      {
+       "name": "Lucy Dacus",
+       "affinity": 0.965,
+       "type": "artist"
+      },
+      {
+       "name": "Samia",
+       "affinity": 0.96,
+       "type": "artist"
+      },
+      {
+       "name": "Orla Gartland",
+       "affinity": 0.957,
+       "type": "artist"
+      },
+      {
+       "name": "Gracie Abrams",
+       "affinity": 0.956,
+       "type": "artist"
+      },
+      {
+       "name": "Lizzy McAlpine",
+       "affinity": 0.955,
+       "type": "artist"
+      }
+     ],
+     "movie": [
+      {
+       "name": "Cha Cha Real Smooth",
+       "affinity": 0.92,
+       "type": "movie"
+      },
+      {
+       "name": "The Whale",
+       "affinity": 0.92,
+       "type": "movie"
+      },
+      {
+       "name": "All of Us Strangers",
+       "affinity": 0.92,
+       "type": "movie"
+      },
+      {
+       "name": "The Fallout",
+       "affinity": 0.918,
+       "type": "movie"
+      },
+      {
+       "name": "Aftersun",
+       "affinity": 0.917,
+       "type": "movie"
+      }
+     ],
+     "tv_show": [
+      {
+       "name": "Because This Is My First Life",
+       "affinity": 0.962,
+       "type": "tv_show"
+      },
+      {
+       "name": "Our Beloved Summer",
+       "affinity": 0.962,
+       "type": "tv_show"
+      },
+      {
+       "name": "Something in the Rain",
+       "affinity": 0.959,
+       "type": "tv_show"
+      },
+      {
+       "name": "Fight for My Way",
+       "affinity": 0.959,
+       "type": "tv_show"
+      },
+      {
+       "name": "18 Again",
+       "affinity": 0.959,
+       "type": "tv_show"
+      }
+     ],
+     "book": [
+      {
+       "name": "Didn't Nobody Give a Shit What Happened to Carlotta",
+       "affinity": 0.898,
+       "type": "book"
+      },
+      {
+       "name": "Betty",
+       "affinity": 0.887,
+       "type": "book"
+      },
+      {
+       "name": "Last Summer on State Street",
+       "affinity": 0.882,
+       "type": "book"
+      },
+      {
+       "name": "Nightcrawling",
+       "affinity": 0.88,
+       "type": "book"
+      },
+      {
+       "name": "Somebody's Daughter",
+       "affinity": 0.88,
+       "type": "book"
+      }
+     ],
+     "podcast": [
+      {
+       "name": "Las Culturistas with Matt Rogers and Bowen Yang",
+       "affinity": 0.941,
+       "type": "podcast"
+      },
+      {
+       "name": "Getting Curious with Jonathan Van Ness",
+       "affinity": 0.928,
+       "type": "podcast"
+      },
+      {
+       "name": "Seek Treatment with Cat & Pat",
+       "affinity": 0.925,
+       "type": "podcast"
+      },
+      {
+       "name": "Nancy",
+       "affinity": 0.918,
+       "type": "podcast"
+      },
+      {
+       "name": "Couples Therapy",
+       "affinity": 0.917,
+       "type": "podcast"
+      }
+     ],
+     "brand": [
+      {
+       "name": "Airbnb",
+       "affinity": 0.906,
+       "type": "brand"
+      },
+      {
+       "name": "Getty Images",
+       "affinity": 0.906,
+       "type": "brand"
+      },
+      {
+       "name": "Polaroid",
+       "affinity": 0.906,
+       "type": "brand"
+      },
+      {
+       "name": "Urban Outfitters",
+       "affinity": 0.903,
+       "type": "brand"
+      },
+      {
+       "name": "Culture Trip",
+       "affinity": 0.896,
+       "type": "brand"
+      }
+     ],
+     "destination": [
+      {
+       "name": "Salem",
+       "affinity": 0.924,
+       "type": "destination"
+      },
+      {
+       "name": "Williamstown",
+       "affinity": 0.915,
+       "type": "destination"
+      },
+      {
+       "name": "New Haven",
+       "affinity": 0.915,
+       "type": "destination"
+      },
+      {
+       "name": "Cambridge",
+       "affinity": 0.911,
+       "type": "destination"
+      },
+      {
+       "name": "Provincetown",
+       "affinity": 0.911,
+       "type": "destination"
+      }
+     ]
+    },
+    "shared": [
+     {
+      "name": "Lucy Dacus",
+      "type": "artist",
+      "affinity": 0.956,
+      "them": 0.51,
+      "me": 0.63
+     },
+     {
+      "name": "Sufjan Stevens",
+      "type": "artist",
+      "affinity": 0.951,
+      "them": 0.47,
+      "me": 0.69
+     },
+     {
+      "name": "Julien Baker",
+      "type": "artist",
+      "affinity": 0.947,
+      "them": 0.51,
+      "me": 0.64
+     },
+     {
+      "name": "Big Red Machine",
+      "type": "artist",
+      "affinity": 0.945,
+      "them": 0.53,
+      "me": 0.63
+     },
+     {
+      "name": "boygenius",
+      "type": "artist",
+      "affinity": 0.944,
+      "them": 0.52,
+      "me": 0.64
+     },
+     {
+      "name": "Better Oblivion Community Center",
+      "type": "artist",
+      "affinity": 0.942,
+      "them": 0.52,
+      "me": 0.63
+     }
+    ],
+    "nudges": [
+     {
+      "say": "Have you heard Lucy Dacus's new stuff? We both love her.",
+      "about": "Lucy Dacus",
+      "why": "Shared favorite, and fans of your taste love her too.",
+      "grounded": true
+     },
+     {
+      "say": "Ever seen All of Us Strangers? Sounds like your kind of cry.",
+      "about": "All of Us Strangers",
+      "why": "Fans of your taste also love this tearjerker.",
+      "grounded": true
+     },
+     {
+      "say": "Have you gotten into Gracie Abrams yet? Similar vibe to Phoebe.",
+      "about": "Gracie Abrams",
+      "why": "Your taste overlaps strongly with Gracie Abrams fans.",
+      "grounded": true
+     }
+    ],
+    "updated": 1792610049738
+   }
+  },
+  {
+   "heard": "Quietly sad. Oh, and I cannot stand superhero films, I fell asleep in the last Marvel one.",
+   "who": "them",
+   "view": {
+    "lines": [
+     {
+      "who": "them",
+      "text": "Sorry I was late, I was finishing the new Sally Rooney on the train.",
+      "t": 1792610005659
+     },
+     {
+      "who": "me",
+      "text": "No worries. Is it as good as Normal People?",
+      "t": 1792610014457
+     },
+     {
+      "who": "them",
+      "text": "Better, honestly. I have been on such a reading kick. That and Phoebe Bridgers on repeat.",
+      "t": 1792610025238
+     },
+     {
+      "who": "them",
+      "text": "We went to see Past Lives again last weekend and I cried the whole second half.",
+      "t": 1792610036220
+     },
+     {
+      "who": "me",
+      "text": "I have not seen it yet. Is it sad?",
+      "t": 1792610048371
+     },
+     {
+      "who": "them",
+      "text": "Quietly sad. Oh, and I cannot stand superhero films, I fell asleep in the last Marvel one.",
+      "t": 1792610049746
+     }
+    ],
+    "them": [
+     {
+      "name": "Sally Rooney",
+      "type": "person",
+      "id": "73C8C852-CDF3-4226-92A4-74C0B0E29DC7"
+     },
+     {
+      "name": "Phoebe Bridgers",
+      "type": "artist",
+      "id": "AFBC71A7-9439-4AB0-AB68-D14B11AAF836"
+     },
+     {
+      "name": "Past Lives",
+      "type": "movie",
+      "id": "9A62B37E-9A6D-47DA-A6FD-9414FA7F7710"
+     }
+    ],
+    "mine": [
+     {
+      "name": "Bon Iver",
+      "type": "artist",
+      "id": "E51DB8F2-7A93-4746-A283-E55B5216FDE1"
+     },
+     {
+      "name": "Past Lives",
+      "type": "movie",
+      "id": "9A62B37E-9A6D-47DA-A6FD-9414FA7F7710"
+     },
+     {
+      "name": "Haruki Murakami",
+      "type": "author",
+      "id": "E96DF441-451B-4C26-9415-257594472F52"
+     },
+     {
+      "name": "Normal People",
+      "type": "tv_show",
+      "id": "19DF9974-2931-42F7-AF6F-DC29B9E17974"
+     }
+    ],
+    "avoid": [
+     {
+      "name": "Superhero",
+      "type": "tag",
+      "id": "urn:tag:subgenre:qloo:superhero"
+     },
+     {
+      "name": "Marvel Entertainment",
+      "type": "brand",
+      "id": "62353B0E-084C-466C-B719-756699933898"
+     }
+    ],
+    "recs": {
+     "artist": [
+      {
+       "name": "Lucy Dacus",
+       "affinity": 0.965,
+       "type": "artist"
+      },
+      {
+       "name": "Samia",
+       "affinity": 0.96,
+       "type": "artist"
+      },
+      {
+       "name": "Orla Gartland",
+       "affinity": 0.957,
+       "type": "artist"
+      },
+      {
+       "name": "Gracie Abrams",
+       "affinity": 0.956,
+       "type": "artist"
+      },
+      {
+       "name": "Lizzy McAlpine",
+       "affinity": 0.955,
+       "type": "artist"
+      }
+     ],
+     "movie": [
+      {
+       "name": "Cha Cha Real Smooth",
+       "affinity": 0.92,
+       "type": "movie"
+      },
+      {
+       "name": "The Whale",
+       "affinity": 0.92,
+       "type": "movie"
+      },
+      {
+       "name": "All of Us Strangers",
+       "affinity": 0.92,
+       "type": "movie"
+      },
+      {
+       "name": "The Fallout",
+       "affinity": 0.918,
+       "type": "movie"
+      },
+      {
+       "name": "Aftersun",
+       "affinity": 0.917,
+       "type": "movie"
+      }
+     ],
+     "tv_show": [
+      {
+       "name": "Because This Is My First Life",
+       "affinity": 0.962,
+       "type": "tv_show"
+      },
+      {
+       "name": "Our Beloved Summer",
+       "affinity": 0.962,
+       "type": "tv_show"
+      },
+      {
+       "name": "Something in the Rain",
+       "affinity": 0.959,
+       "type": "tv_show"
+      },
+      {
+       "name": "Fight for My Way",
+       "affinity": 0.959,
+       "type": "tv_show"
+      },
+      {
+       "name": "18 Again",
+       "affinity": 0.959,
+       "type": "tv_show"
+      }
+     ],
+     "book": [
+      {
+       "name": "Didn't Nobody Give a Shit What Happened to Carlotta",
+       "affinity": 0.898,
+       "type": "book"
+      },
+      {
+       "name": "Betty",
+       "affinity": 0.887,
+       "type": "book"
+      },
+      {
+       "name": "Last Summer on State Street",
+       "affinity": 0.882,
+       "type": "book"
+      },
+      {
+       "name": "Nightcrawling",
+       "affinity": 0.88,
+       "type": "book"
+      },
+      {
+       "name": "Somebody's Daughter",
+       "affinity": 0.88,
+       "type": "book"
+      }
+     ],
+     "podcast": [
+      {
+       "name": "Las Culturistas with Matt Rogers and Bowen Yang",
+       "affinity": 0.941,
+       "type": "podcast"
+      },
+      {
+       "name": "Getting Curious with Jonathan Van Ness",
+       "affinity": 0.928,
+       "type": "podcast"
+      },
+      {
+       "name": "Seek Treatment with Cat & Pat",
+       "affinity": 0.925,
+       "type": "podcast"
+      },
+      {
+       "name": "Nancy",
+       "affinity": 0.918,
+       "type": "podcast"
+      },
+      {
+       "name": "Couples Therapy",
+       "affinity": 0.917,
+       "type": "podcast"
+      }
+     ],
+     "brand": [
+      {
+       "name": "Airbnb",
+       "affinity": 0.906,
+       "type": "brand"
+      },
+      {
+       "name": "Getty Images",
+       "affinity": 0.906,
+       "type": "brand"
+      },
+      {
+       "name": "Polaroid",
+       "affinity": 0.906,
+       "type": "brand"
+      },
+      {
+       "name": "Urban Outfitters",
+       "affinity": 0.903,
+       "type": "brand"
+      },
+      {
+       "name": "Culture Trip",
+       "affinity": 0.896,
+       "type": "brand"
+      }
+     ],
+     "destination": [
+      {
+       "name": "Salem",
+       "affinity": 0.924,
+       "type": "destination"
+      },
+      {
+       "name": "Williamstown",
+       "affinity": 0.915,
+       "type": "destination"
+      },
+      {
+       "name": "New Haven",
+       "affinity": 0.915,
+       "type": "destination"
+      },
+      {
+       "name": "Cambridge",
+       "affinity": 0.911,
+       "type": "destination"
+      },
+      {
+       "name": "Provincetown",
+       "affinity": 0.911,
+       "type": "destination"
+      }
+     ]
+    },
+    "shared": [
+     {
+      "name": "Lucy Dacus",
+      "type": "artist",
+      "affinity": 0.956,
+      "them": 0.51,
+      "me": 0.63
+     },
+     {
+      "name": "Sufjan Stevens",
+      "type": "artist",
+      "affinity": 0.951,
+      "them": 0.47,
+      "me": 0.69
+     },
+     {
+      "name": "Julien Baker",
+      "type": "artist",
+      "affinity": 0.947,
+      "them": 0.51,
+      "me": 0.64
+     },
+     {
+      "name": "Big Red Machine",
+      "type": "artist",
+      "affinity": 0.945,
+      "them": 0.53,
+      "me": 0.63
+     },
+     {
+      "name": "boygenius",
+      "type": "artist",
+      "affinity": 0.944,
+      "them": 0.52,
+      "me": 0.64
+     },
+     {
+      "name": "Better Oblivion Community Center",
+      "type": "artist",
+      "affinity": 0.942,
+      "them": 0.52,
+      "me": 0.63
+     }
+    ],
+    "nudges": [
+     {
+      "say": "Have you heard Lucy Dacus? I think you'd like her.",
+      "about": "Lucy Dacus",
+      "why": "People with their taste also love her.",
+      "grounded": true
+     },
+     {
+      "say": "Oh, that reminds me of Sufjan Stevens.",
+      "about": "Sufjan Stevens",
+      "why": "You both have this artist in common.",
+      "grounded": true
+     },
+     {
+      "say": "Have you seen All of Us Strangers?",
+      "about": "All of Us Strangers",
+      "why": "People with their taste also love it.",
+      "grounded": true
+     }
+    ],
+    "updated": 1792610059785
+   }
+  },
+  {
+   "heard": "Next month I am going to Lisbon, mostly to eat pastries and walk around.",
+   "who": "them",
+   "view": {
+    "lines": [
+     {
+      "who": "them",
+      "text": "Sorry I was late, I was finishing the new Sally Rooney on the train.",
+      "t": 1792610005659
+     },
+     {
+      "who": "me",
+      "text": "No worries. Is it as good as Normal People?",
+      "t": 1792610014457
+     },
+     {
+      "who": "them",
+      "text": "Better, honestly. I have been on such a reading kick. That and Phoebe Bridgers on repeat.",
+      "t": 1792610025238
+     },
+     {
+      "who": "them",
+      "text": "We went to see Past Lives again last weekend and I cried the whole second half.",
+      "t": 1792610036220
+     },
+     {
+      "who": "me",
+      "text": "I have not seen it yet. Is it sad?",
+      "t": 1792610048371
+     },
+     {
+      "who": "them",
+      "text": "Quietly sad. Oh, and I cannot stand superhero films, I fell asleep in the last Marvel one.",
+      "t": 1792610049746
+     },
+     {
+      "who": "them",
+      "text": "Next month I am going to Lisbon, mostly to eat pastries and walk around.",
+      "t": 1792610059788
+     }
+    ],
+    "them": [
+     {
+      "name": "Sally Rooney",
+      "type": "person",
+      "id": "73C8C852-CDF3-4226-92A4-74C0B0E29DC7"
+     },
+     {
+      "name": "Phoebe Bridgers",
+      "type": "artist",
+      "id": "AFBC71A7-9439-4AB0-AB68-D14B11AAF836"
+     },
+     {
+      "name": "Past Lives",
+      "type": "movie",
+      "id": "9A62B37E-9A6D-47DA-A6FD-9414FA7F7710"
+     },
+     {
+      "name": "Lisbon",
+      "type": "destination",
+      "id": "F5031AA6-799B-4FC7-B38F-E23F14F1ED4C"
+     }
+    ],
+    "mine": [
+     {
+      "name": "Bon Iver",
+      "type": "artist",
+      "id": "E51DB8F2-7A93-4746-A283-E55B5216FDE1"
+     },
+     {
+      "name": "Past Lives",
+      "type": "movie",
+      "id": "9A62B37E-9A6D-47DA-A6FD-9414FA7F7710"
+     },
+     {
+      "name": "Haruki Murakami",
+      "type": "author",
+      "id": "E96DF441-451B-4C26-9415-257594472F52"
+     },
+     {
+      "name": "Normal People",
+      "type": "tv_show",
+      "id": "19DF9974-2931-42F7-AF6F-DC29B9E17974"
+     }
+    ],
+    "avoid": [
+     {
+      "name": "Superhero",
+      "type": "tag",
+      "id": "urn:tag:subgenre:qloo:superhero"
+     },
+     {
+      "name": "Marvel Entertainment",
+      "type": "brand",
+      "id": "62353B0E-084C-466C-B719-756699933898"
+     }
+    ],
+    "recs": {
+     "artist": [
+      {
+       "name": "Lucy Dacus",
+       "affinity": 0.965,
+       "type": "artist"
+      },
+      {
+       "name": "Samia",
+       "affinity": 0.96,
+       "type": "artist"
+      },
+      {
+       "name": "Orla Gartland",
+       "affinity": 0.957,
+       "type": "artist"
+      },
+      {
+       "name": "Gracie Abrams",
+       "affinity": 0.956,
+       "type": "artist"
+      },
+      {
+       "name": "Lizzy McAlpine",
+       "affinity": 0.955,
+       "type": "artist"
+      }
+     ],
+     "movie": [
+      {
+       "name": "Cha Cha Real Smooth",
+       "affinity": 0.92,
+       "type": "movie"
+      },
+      {
+       "name": "The Whale",
+       "affinity": 0.92,
+       "type": "movie"
+      },
+      {
+       "name": "All of Us Strangers",
+       "affinity": 0.92,
+       "type": "movie"
+      },
+      {
+       "name": "The Fallout",
+       "affinity": 0.918,
+       "type": "movie"
+      },
+      {
+       "name": "Aftersun",
+       "affinity": 0.917,
+       "type": "movie"
+      }
+     ],
+     "tv_show": [
+      {
+       "name": "Because This Is My First Life",
+       "affinity": 0.962,
+       "type": "tv_show"
+      },
+      {
+       "name": "Our Beloved Summer",
+       "affinity": 0.962,
+       "type": "tv_show"
+      },
+      {
+       "name": "Something in the Rain",
+       "affinity": 0.959,
+       "type": "tv_show"
+      },
+      {
+       "name": "Fight for My Way",
+       "affinity": 0.959,
+       "type": "tv_show"
+      },
+      {
+       "name": "18 Again",
+       "affinity": 0.959,
+       "type": "tv_show"
+      }
+     ],
+     "book": [
+      {
+       "name": "Didn't Nobody Give a Shit What Happened to Carlotta",
+       "affinity": 0.898,
+       "type": "book"
+      },
+      {
+       "name": "Betty",
+       "affinity": 0.887,
+       "type": "book"
+      },
+      {
+       "name": "Last Summer on State Street",
+       "affinity": 0.882,
+       "type": "book"
+      },
+      {
+       "name": "Nightcrawling",
+       "affinity": 0.88,
+       "type": "book"
+      },
+      {
+       "name": "Somebody's Daughter",
+       "affinity": 0.88,
+       "type": "book"
+      }
+     ],
+     "podcast": [
+      {
+       "name": "Las Culturistas with Matt Rogers and Bowen Yang",
+       "affinity": 0.941,
+       "type": "podcast"
+      },
+      {
+       "name": "Getting Curious with Jonathan Van Ness",
+       "affinity": 0.928,
+       "type": "podcast"
+      },
+      {
+       "name": "Seek Treatment with Cat & Pat",
+       "affinity": 0.925,
+       "type": "podcast"
+      },
+      {
+       "name": "Nancy",
+       "affinity": 0.918,
+       "type": "podcast"
+      },
+      {
+       "name": "Couples Therapy",
+       "affinity": 0.917,
+       "type": "podcast"
+      }
+     ],
+     "brand": [
+      {
+       "name": "Airbnb",
+       "affinity": 0.906,
+       "type": "brand"
+      },
+      {
+       "name": "Getty Images",
+       "affinity": 0.906,
+       "type": "brand"
+      },
+      {
+       "name": "Polaroid",
+       "affinity": 0.906,
+       "type": "brand"
+      },
+      {
+       "name": "Urban Outfitters",
+       "affinity": 0.903,
+       "type": "brand"
+      },
+      {
+       "name": "Culture Trip",
+       "affinity": 0.896,
+       "type": "brand"
+      }
+     ],
+     "destination": [
+      {
+       "name": "Williamstown",
+       "affinity": 0.909,
+       "type": "destination"
+      },
+      {
+       "name": "Lenox",
+       "affinity": 0.9,
+       "type": "destination"
+      },
+      {
+       "name": "New Haven",
+       "affinity": 0.9,
+       "type": "destination"
+      },
+      {
+       "name": "Salem",
+       "affinity": 0.889,
+       "type": "destination"
+      },
+      {
+       "name": "Cambridge",
+       "affinity": 0.889,
+       "type": "destination"
+      }
+     ]
+    },
+    "shared": [
+     {
+      "name": "Lucy Dacus",
+      "type": "artist",
+      "affinity": 0.956,
+      "them": 0.51,
+      "me": 0.63
+     },
+     {
+      "name": "Sufjan Stevens",
+      "type": "artist",
+      "affinity": 0.951,
+      "them": 0.47,
+      "me": 0.69
+     },
+     {
+      "name": "Julien Baker",
+      "type": "artist",
+      "affinity": 0.947,
+      "them": 0.51,
+      "me": 0.64
+     },
+     {
+      "name": "Big Red Machine",
+      "type": "artist",
+      "affinity": 0.945,
+      "them": 0.53,
+      "me": 0.63
+     },
+     {
+      "name": "boygenius",
+      "type": "artist",
+      "affinity": 0.944,
+      "them": 0.52,
+      "me": 0.64
+     },
+     {
+      "name": "Better Oblivion Community Center",
+      "type": "artist",
+      "affinity": 0.942,
+      "them": 0.52,
+      "me": 0.63
+     }
+    ],
+    "nudges": [
+     {
+      "say": "Have you heard Lucy Dacus' new album?",
+      "about": "Lucy Dacus",
+      "why": "People with their taste also love her.",
+      "grounded": true
+     },
+     {
+      "say": "What do you think of Cha Cha Real Smooth?",
+      "about": "Cha Cha Real Smooth",
+      "why": "People with their taste also love it.",
+      "grounded": true
+     },
+     {
+      "say": "Are you excited for your trip to Lisbon?",
+      "about": "Lisbon",
+      "why": "You both mentioned liking Lisbon.",
+      "grounded": false
+     }
+    ],
+    "updated": 1792610068210
+   }
+  }
+ ],
+ "compare": {
+  "model": "anthropic/claude-haiku-5.5",
+  "picks": [
+   {
+    "name": "Writers & Lovers",
+    "kind": "book",
+    "verdict": "known",
+    "match": "Writers &amp; Lovers"
+   },
+   {
+    "name": "Mitski",
+    "kind": "artist",
+    "verdict": "known",
+    "match": "Mitski"
+   },
+   {
+    "name": "Aftersun",
+    "kind": "movie",
+    "verdict": "ranked",
+    "match": "Aftersun"
+   },
+   {
+    "name": "Fleabag",
+    "kind": "tv_show",
+    "verdict": "known",
+    "match": "Fleabag"
+   },
+   {
+    "name": "Heavyweight",
+    "kind": "podcast",
+    "verdict": "known",
+    "match": "Heavyweight"
+   },
+   {
+    "name": "Sintra",
+    "kind": "destination",
+    "verdict": "known",
+    "match": "Sintra"
+   }
+  ],
+  "counts": {
+   "ranked": 1,
+   "known": 5,
+   "unknown": 0
+  },
+  "total": 6
+ },
+ "recorded": "2026-10-21T19:14:33.384Z"
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>SmallTalk</title>
+  <meta name="description" content="SmallTalk hears what the other person loves, asks Qloo, and suggests what to say next. On glasses, a headset or your phone.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="/img/smalltalk-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/img/smalltalk-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="/talk.css">
+  <script type="module" src="/talk.js"></script>
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="/"><picture><source srcset="/img/smalltalk-dark-180.png" media="(prefers-color-scheme: dark)"><img src="/img/smalltalk-180.png" alt="" width="30" height="30"></picture><span>SmallTalk</span></a>
+    <a class="nav-link" href="https://github.com/teawa-b/qloo-hackathon-sites" target="_blank" rel="noreferrer"><i class="ph ph-github-logo"></i> Code</a>
+  </header>
+
+  <main>
+    <section id="setup">
+      <div class="hero">
+        <div class="hero-copy">
+          <h1>Know what to say next.</h1>
+          <p class="hero-lead">SmallTalk hears what they love, asks Qloo, and suggests what to say next. On glasses, a headset or your phone.</p>
+          <div class="start">
+            <button id="demo" class="cta" type="button"><i class="ph ph-play"></i> Play the sample conversation</button>
+            <button id="listen" class="ghost" type="button"><i class="ph ph-microphone"></i> Start listening</button>
+          </div>
+          <label class="field"><span>Your own favourites <span class="opt">optional, for common ground</span></span><input id="mine" maxlength="300" placeholder="Bon Iver, Past Lives, Murakami"></label>
+          <label class="consent"><input type="checkbox" id="consent"> The other person knows I'm using a conversation assistant.</label>
+        </div>
+        <figure class="hero-shot"><img src="/img/smalltalk-hud.png" alt="SmallTalk during a conversation: the next thing to say, what they love, what you share and what to avoid" width="1200" height="900"></figure>
+      </div>
+      <section class="how">
+        <h2>How it works</h2>
+        <ol>
+          <li><i class="ph ph-ear"></i><div><b>It listens</b><p>Six-second chunks of audio become text (ElevenLabs speech to text). Hold <kbd>I'm talking</kbd> or Space while you speak, so your lines aren't counted as theirs. Nothing is stored.</p></div></li>
+          <li><i class="ph ph-graph"></i><div><b>Qloo builds their taste</b><p>Every band, film, book, place or brand they mention is found in Qloo. Qloo says what people with that taste also love, and what you both share.</p></div></li>
+          <li><i class="ph ph-chat-circle-dots"></i><div><b>You get a nudge</b><p>Three short things you could say next, each tied to a Qloo result. On display glasses it shows one, large.</p></div></li>
+        </ol>
+      </section>
+    </section>
+
+    <section id="hud" hidden>
+      <div class="hud-bar">
+        <span id="status" class="status"><i></i><span>Listening</span></span>
+        <div class="hud-actions">
+          <button id="compare" class="ghost small" type="button" hidden><i class="ph ph-scales"></i> Without Qloo?</button>
+          <button id="glasses" class="ghost small" type="button"><i class="ph ph-eyeglasses"></i> Glasses view</button>
+          <button id="xr" class="ghost small" type="button" hidden><i class="ph ph-cube"></i> Enter AR / VR</button>
+          <button id="stop" class="ghost small" type="button"><i class="ph ph-stop"></i> End</button>
+        </div>
+      </div>
+      <p id="demo-note" class="note" hidden>A recorded sample conversation, replayed line by line. Start listening to use it for real.</p>
+      <div class="hud-main">
+        <div>
+          <h2 class="label">Say next</h2>
+          <div id="nudges" class="nudges"><p class="empty">Waiting for them to mention something they love.</p></div>
+          <section id="cmp" class="cmp" hidden>
+            <h2 class="label">With and without Qloo</h2>
+            <p id="cmp-score" class="cmp-score"></p>
+            <ul id="cmp-list" class="cmp-list"></ul>
+            <p id="cmp-foot" class="small"></p>
+          </section>
+        </div>
+        <aside class="profile">
+          <section><h2 class="label">They love</h2><div id="them" class="chips"></div></section>
+          <section><h2 class="label">You share</h2><div id="shared" class="chips"></div></section>
+          <section><h2 class="label">Steer clear</h2><div id="avoid" class="chips"></div></section>
+          <section><h2 class="label">People with their taste also love <span class="tag">Qloo</span></h2><div id="recs" class="recs"></div></section>
+        </aside>
+      </div>
+      <div class="hud-bottom">
+        <form id="say" class="say"><input id="say-input" maxlength="300" placeholder="Or type what they said"><button aria-label="Add" type="submit"><i class="ph ph-arrow-right"></i></button></form>
+        <button id="me" class="me" type="button"><i class="ph ph-microphone"></i> Hold: I'm talking</button>
+      </div>
+      <h2 class="label lines-label">Conversation</h2>
+      <ol id="lines" class="lines"></ol>
+    </section>
+  </main>
+
+  <div id="glass" class="glass" hidden><p id="glass-say"></p><small id="glass-why"></small><button id="glass-x" class="glass-x" type="button" aria-label="Close glasses view"><i class="ph ph-x"></i></button></div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <footer class="foot">Taste data from <a href="https://www.qloo.com" target="_blank" rel="noreferrer">Qloo</a>. Audio is transcribed and not stored. Qloo describes crowds, not people.</footer>
+</body>
+</html>
