@@ -55,7 +55,7 @@ what they say ──► speech to text ──► the names they mention
 
 - **Phone or laptop:** the full view.
 - **Glasses view:** one nudge, huge, white on black, for display glasses mirroring a phone.
-- **Enter AR / VR:** the nudges float in front of you in WebXR, with Quest passthrough when available ([`frontend/talk-xr.js`](frontend/talk-xr.js)). Hold the trigger while you speak.
+- **Enter AR / VR:** a thin bar just below your eye line, like a subtitle, shows the one thing to say next and updates as you talk. It runs in WebXR, with Quest passthrough when available ([`frontend/talk-xr.js`](frontend/talk-xr.js)). Hold the trigger while you speak.
 
 ## How the code is laid out
 

@@ -1,36 +1,34 @@
-// AR/VR heads-up for SmallTalk: a panel that floats about a metre in front of you and lazily follows your
-// gaze, drawn to a canvas so it stays crisp in the headset. Passthrough AR on Quest when available,
-// otherwise immersive VR. Holding either trigger marks the lines as yours.
+// AR/VR heads-up for SmallTalk: a thin bar just below your eye line, like a subtitle, showing the one thing to
+// say next and updating as the conversation goes. It lazily follows your gaze and is drawn to a canvas so it stays
+// crisp in the headset. Passthrough AR on Quest when available, otherwise immersive VR. Holding either trigger
+// marks the lines as yours.
 const THREE = await import('https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js');
 
-const W = 1024, H = 640;
-// SmallTalk's look: off-black panel, one burnt-orange accent, Geist (already loaded by the page).
+const W = 1600, H = 200;
+// SmallTalk's look: off-black bar, one burnt-orange accent, Geist (already loaded by the page).
 const ACCENT = '#f27434', SANS = 'Geist, system-ui, sans-serif', MONO = '"Geist Mono", monospace';
 function draw(ctx, view, status = '') {
   ctx.clearRect(0, 0, W, H);
-  ctx.fillStyle = 'rgba(17,16,19,0.88)'; roundRect(ctx, 0, 0, W, H, 40); ctx.fill();
-  ctx.fillStyle = ACCENT; ctx.font = `600 26px ${SANS}`; ctx.fillText('SmallTalk', 48, 64);
-  if (status) { ctx.fillStyle = '#a7a5ad'; ctx.font = `500 22px ${MONO}`; const w = ctx.measureText(status).width; ctx.fillText(status, W - 48 - w, 62); ctx.fillStyle = ACCENT; ctx.beginPath(); ctx.arc(W - 64 - w, 54, 7, 0, Math.PI * 2); ctx.fill(); }
-  const nudges = view?.nudges || [];
-  let y = 140;
-  if (!nudges.length) { ctx.fillStyle = '#a7a5ad'; ctx.font = `600 40px ${SANS}`; wrap(ctx, 'Listening for what they love.', 48, y, W - 96, 50); }
-  nudges.slice(0, 2).forEach((n, i) => {
-    ctx.fillStyle = i ? '#d9d6d0' : '#ffffff'; ctx.font = `${i ? 500 : 600} ${i ? 36 : 52}px ${SANS}`;
-    y = wrap(ctx, n.say, 48, y, W - 96, i ? 44 : 60) + 6;
-    ctx.fillStyle = n.grounded ? ACCENT : '#7a7880'; ctx.font = `500 22px ${MONO}`; ctx.fillText(`${n.about}${n.grounded ? '' : ' (not from Qloo)'}`.slice(0, 70), 48, y); y += 58;
-  });
-  const row = (label, list, yy) => { if (!list) return; ctx.fillStyle = '#7a7880'; ctx.font = `500 20px ${MONO}`; ctx.fillText(label, 48, yy); ctx.fillStyle = '#f3f2ef'; ctx.font = `500 26px ${SANS}`; ctx.fillText(list.slice(0, 60), 220, yy); };
-  row('They love', (view?.them || []).slice(0, 5).map(e => e.name).join(', '), H - 78);
-  row('Steer clear', (view?.avoid || []).slice(0, 4).map(e => e.name).join(', '), H - 38);
+  ctx.fillStyle = 'rgba(17,16,19,0.8)'; roundRect(ctx, 0, 0, W, H, H / 2); ctx.fill();
+  const nudge = (view?.nudges || [])[0], x = 104, max = W - x - 80;
+  // A dot that says it is listening, in the accent while a nudge is up.
+  ctx.fillStyle = nudge ? ACCENT : '#7a7880'; ctx.beginPath(); ctx.arc(62, H / 2, 11, 0, Math.PI * 2); ctx.fill();
+  // One line, as large as fits: the thing to say next.
+  const line = nudge ? nudge.say : 'Listening for what they love';
+  let size = 56;
+  do { ctx.font = `600 ${size}px ${SANS}`; } while (ctx.measureText(line).width > max && --size > 36);
+  ctx.fillStyle = nudge ? '#ffffff' : '#a7a5ad';
+  ctx.fillText(fit(ctx, line, max), x, 98);
+  // Underneath, small: what it is about and where it came from, and what the app is doing.
+  ctx.font = `500 26px ${MONO}`;
+  if (nudge) { ctx.fillStyle = nudge.grounded ? ACCENT : '#7a7880'; ctx.fillText(fit(ctx, `${nudge.about} · ${nudge.grounded ? 'from Qloo' : 'not from Qloo'}`, max - 320), x, 152); }
+  if (status) { ctx.fillStyle = '#7a7880'; const w = ctx.measureText(status).width; ctx.fillText(status, W - 80 - w, 152); }
 }
-function wrap(ctx, text, x, y, max, lh) {
-  let lineText = '';
-  for (const word of String(text).split(' ')) {
-    const test = lineText ? `${lineText} ${word}` : word;
-    if (ctx.measureText(test).width > max && lineText) { ctx.fillText(lineText, x, y); y += lh; lineText = word; } else lineText = test;
-  }
-  if (lineText) { ctx.fillText(lineText, x, y); y += lh; }
-  return y;
+function fit(ctx, text, max) {
+  if (ctx.measureText(text).width <= max) return text;
+  let t = text;
+  while (t.length > 1 && ctx.measureText(`${t}…`).width > max) t = t.slice(0, -1);
+  return `${t.trimEnd()}…`;
 }
 function roundRect(ctx, x, y, w, h, r) { ctx.beginPath(); ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r); ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath(); }
 
@@ -49,7 +47,7 @@ export async function enterXR({ view, status: initialStatus = 'Listening', onTal
   const canvas = Object.assign(document.createElement('canvas'), { width: W, height: H });
   const ctx = canvas.getContext('2d');
   const texture = new THREE.CanvasTexture(canvas); texture.colorSpace = THREE.SRGBColorSpace;
-  const panel = new THREE.Mesh(new THREE.PlaneGeometry(0.8, 0.5), new THREE.MeshBasicMaterial({ map: texture, transparent: true }));
+  const panel = new THREE.Mesh(new THREE.PlaneGeometry(0.84, 0.105), new THREE.MeshBasicMaterial({ map: texture, transparent: true }));
   scene.add(panel);
   draw(ctx, view, status); texture.needsUpdate = true;
 
@@ -58,15 +56,15 @@ export async function enterXR({ view, status: initialStatus = 'Listening', onTal
   session.addEventListener('selectstart', () => onTalking(true));
   session.addEventListener('selectend', () => onTalking(false));
 
-  // Lazy follow: the panel eases toward a point 1.1 m ahead and 15 cm below eye level.
+  // Lazy follow: the bar eases toward a point a metre ahead and 28 cm below eye level, where subtitles sit.
   const target = new THREE.Vector3(), dir = new THREE.Vector3(), head = new THREE.Vector3();
   let placed = false;
   renderer.setAnimationLoop(() => {
     const cam = renderer.xr.getCamera();
     cam.getWorldPosition(head); cam.getWorldDirection(dir); dir.y = 0; dir.normalize();
-    target.copy(head).addScaledVector(dir, 1.1); target.y = head.y - 0.15;
+    target.copy(head).addScaledVector(dir, 1.0); target.y = head.y - 0.28;
     if (!placed) { panel.position.copy(target); placed = true; } else panel.position.lerp(target, 0.04);
-    panel.lookAt(head.x, panel.position.y, head.z);
+    panel.lookAt(head);
     renderer.render(scene, camera);
   });
   const cleanup = () => { renderer.setAnimationLoop(null); renderer.domElement.remove(); renderer.dispose(); onEnd?.(); };
