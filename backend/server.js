@@ -10,7 +10,8 @@ import { createTalk, transcribe, compareWithout } from './lib/talk.js';
 
 // SmallTalk's backend: serves the page in ../frontend and the conversation API: start, hear a line, compare.
 const files = {
-  '/': ['talk.html', 'text/html'], '/talk.js': ['talk.js', 'text/javascript'], '/talk-xr.js': ['talk-xr.js', 'text/javascript'], '/talk.css': ['talk.css', 'text/css']
+  '/': ['talk.html', 'text/html'], '/talk.js': ['talk.js', 'text/javascript'], '/talk-xr.js': ['talk-xr.js', 'text/javascript'], '/talk.css': ['talk.css', 'text/css'],
+  '/sound.js': ['sound.js', 'text/javascript']
 };
 const cdn = 'https://cdn.jsdelivr.net';
 

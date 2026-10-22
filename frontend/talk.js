@@ -1,3 +1,4 @@
+import { tick, chime } from '/sound.js';
 const $ = id => document.getElementById(id);
 // Model-written text never shows an em or en dash used as punctuation (house style); a comma reads the same.
 const tidy = v => typeof v === 'string' ? v.replace(/(\d)\s*–\s*(\d)/g, '$1-$2').replace(/\s*[—–]\s*/g, ', ') : v;
@@ -27,7 +28,7 @@ $('listen').addEventListener('click', async () => {
     stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true } });
   } catch { return toast('Microphone blocked. Allow it, or play the sample conversation.'); }
   try { if (!(await start())) { stream.getTracks().forEach(t => t.stop()); return; } } catch (error) { stream.getTracks().forEach(t => t.stop()); return toast(error.message); }
-  recording = true; status('Listening'); loop();
+  recording = true; status('Listening'); tick(); loop();
 });
 async function loop() {
   const type = ['audio/webm;codecs=opus', 'audio/webm', 'audio/mp4'].find(t => MediaRecorder.isTypeSupported(t)) || '';
@@ -73,6 +74,7 @@ $('compare').addEventListener('click', async () => {
   finally { $('compare').disabled = false; }
 });
 function showCompare(b) {
+  chime();
   const label = { ranked: 'Qloo ranks it for their taste', known: 'Real, but Qloo does not rank it for their taste', unknown: 'Not in Qloo' };
   $('cmp-score').textContent = `Without Qloo, ${b.counts.ranked} of ${b.total} suggestions fit their taste`;
   $('cmp-list').replaceChildren(...b.picks.map(p => { const li = el('li', p.verdict); li.append(el('span', '', p.name), el('span', '', p.kind.replace('_', ' ')), el('span', '', label[p.verdict])); return li; }));
@@ -98,6 +100,7 @@ $('say').addEventListener('submit', e => { e.preventDefault(); const t = $('say-
 $('demo').addEventListener('click', async () => {
   let demo;
   try { demo = await api('/api/talk/demo', { demo: 'sample' }); } catch (error) { return toast(error.message); }
+  tick();
   sample = demo;
   $('setup').hidden = true; $('hud').hidden = false; $('say').hidden = true; $('me').hidden = true;
   $('demo-note').hidden = false;
